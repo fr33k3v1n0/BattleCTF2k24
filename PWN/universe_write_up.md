@@ -45,8 +45,8 @@ so the filter is something like that:
 
 # remember our purpose is to read the flag
 so how to do that???
-after some google and reading writup about seccomp filters,
-i readlize that we can use openat to open a file and sendfile to send it contain to the terminal.
+after some google and reading writeup about seccomp filters,
+i realize that we can use ``openat`` syscall  to open a file and ``sendfile``  to send it contain to the terminal.
 
 # so let do it:
 see the complet exploit
@@ -56,4 +56,4 @@ see the complet exploit
 
 # and we get the flag: battleCTF{Are_W3_4l0ne_!n_7he_univ3rs3?_0e2899c65e58d028b0f553c80e5d413eeefef7af987fd4181e834ee6}
 
-![universe checksec](../images/universe_exploit.py)
+![universe checksec](../images/universe_exploit.png)
