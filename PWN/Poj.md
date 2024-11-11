@@ -1,4 +1,4 @@
-# challenge Name: Pog
+# challenge Name: Prog
 ![Poj_challenge](../images/poj.png)
 
 
@@ -11,7 +11,7 @@ In this challenge, we are given a binary file with a dinamyc linker/loader
 
  not that we need libc.so.6 file in the current directory in order to run pob binary
 
-2. # second step: understand how the prog work
+ 2. # second step: understand how the prog work
 
     ![Poj_challenge](../images/poj_exec1.png)
      we have memory leak of write address
@@ -21,8 +21,8 @@ after decompiled the prog with ghidra, we can know that the main function  print
 
 vuln function read 0x100 byte on local array of length 64 so we have a BOF.
 
-    ![Poj_challenge](../images/main_func_poj.png)
-    ![Poj_challenge](../images/vuln_func_poj.png)
+    ![main function](../images/main_func_poj.png)
+    ![min function](../images/vuln_func_poj.png)
 
 
 3. # exploit the BOF:
