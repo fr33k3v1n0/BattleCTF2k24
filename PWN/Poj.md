@@ -7,7 +7,7 @@ In this challenge, we are given a binary file with a dinamyc linker/loader
 1. # first step: let analyse the prog security
 `` pwn checkseck poj``
     ![Poj_challenge](../images/checksec_poj.png)
-    ## No cannary found. i though about shellcode injection
+    ## No cannary found. 
 
  not that we need libc.so.6 file in the current directory in order to run pob binary
 
@@ -63,7 +63,7 @@ python3 poj_exploi.py  REMOTE challenge.bugpwn.com 1003
 b
 ```
     ![found bof offset](../images/exploit_poj.png)
-and we get the flag: 
+and we get the flag: battleCTF{Libc_J0P_b4s1c_000_bc8a769d91ae062911c32829608e7d547a3f54bd18c7a7c2f5cc52bd} 
 
     
-
+@Top0n3
