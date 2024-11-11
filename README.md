@@ -1,0 +1,3 @@
+# BattleCTF writeup
+
+@ WannaCry
