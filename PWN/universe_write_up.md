@@ -50,7 +50,7 @@ i realize that we can use ``openat`` syscall  to open a file and ``sendfile``  t
 
 # so let do it:
 see the complet exploit
-![universe checksec](../images/universe_exploit.py)
+![universe checksec](universe_exploit.py)
 
 # NB : i didn't solve the chall during the competition because the location of the flag must be guessed. i try to read flag at ./flag, flag, .flag, ../flag, /etc/flag and i get nothing. so i sopped here.      the flag location was /flag :-) very sad. 
 
