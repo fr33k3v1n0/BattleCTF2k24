@@ -10,14 +10,14 @@ In this challenge, we are given a binary file with a dinamyc linker/loader
  pwn checkseck poj 
 ```
 
-    ![Poj_challenge](../images/checksec_poj.png)
+![Poj_challenge](../images/checksec_poj.png)
     ## No cannary found. 
 
  not that we need libc.so.6 file in the current directory in order to run pob binary
 
  2. # second step: understand how the prog work
 
-    ![Poj_challenge](../images/poj_exec1.png)
+![Poj_challenge](../images/poj_exec1.png)
      we have memory leak of write address
 
     # reverse engineering the program
@@ -26,9 +26,10 @@ after decompiled the prog with ghidra, we can know that the main function  print
 vuln function read 0x100 byte on local array of length 64 so we have a BOF.
 
 
-    ![main_function](../images/main_func_poj.png)
+![main_function](../images/main_func_poj.png)
 
-    ![Poj_challenge](../images/poj_exec1.png)
+![Poj_challenge](../images/poj_exec1.png)
+
 # vuln_function
 
     ![vuln_function](../images/vuln_func_poj.png)
@@ -72,7 +73,7 @@ payload = flat({
 python3 poj_exploi.py  REMOTE challenge.bugpwn.com 1003
 
 ```
-    ![found bof offset](../images/exploit_poj.png)
+![found bof offset](../images/exploit_poj.png)
 and we get the flag: battleCTF{Libc_J0P_b4s1c_000_bc8a769d91ae062911c32829608e7d547a3f54bd18c7a7c2f5cc52bd} 
 
     
