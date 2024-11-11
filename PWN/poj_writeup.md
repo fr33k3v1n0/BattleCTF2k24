@@ -43,7 +43,7 @@ vuln function read 0x100 byte on local array of length 64 so we have a BOF.
     1. found offset
     ![found bof offse](../images/found_offset1_poj.png)
 # offset = 72
-    ![found bof offset](../images/found_offset2_poj.png)
+![found bof offset](../images/found_offset2_poj.png)
     
     2. found useful function address /bin/sh string and gadgets  on the libc 
 ```python    ```
