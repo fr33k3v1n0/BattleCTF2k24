@@ -29,7 +29,7 @@ this is a resume:
 3. execute user input shellcode 
 
 
-# so to exploit this prog, we must make shellcode injectin.
+# so to exploit this prog, we must make shellcode injection.
 but before that, let understant what seccomp rules filter.
 
 ![universe checksec](../images/seccomp_dump.png)
