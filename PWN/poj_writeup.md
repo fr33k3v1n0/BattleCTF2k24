@@ -11,7 +11,8 @@ In this challenge, we are given a binary file with a dinamyc linker/loader
 ```
 
 ![Poj_challenge](../images/checksec_poj.png)
-    ## No cannary found. 
+
+## No cannary found. 
 
  note that we need libc.so.6 file in the current directory in order to run pob binary
 
