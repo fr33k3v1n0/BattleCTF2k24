@@ -1,11 +1,14 @@
 # challenge Name: Prog
+
 ![Poj_challenge](../images/poj.png)
 
 
 In this challenge, we are given a binary file with a dinamyc linker/loader
 
-1. # first step: let analyse the prog security
-``` pwn checkseck poj ```
+1. # first step: let analyse the prog security mitigation
+```
+ pwn checkseck poj 
+```
 
     ![Poj_challenge](../images/checksec_poj.png)
     ## No cannary found. 
