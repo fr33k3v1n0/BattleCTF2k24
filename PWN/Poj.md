@@ -26,9 +26,12 @@ after decompiled the prog with ghidra, we can know that the main function  print
 vuln function read 0x100 byte on local array of length 64 so we have a BOF.
 
 # main function
+
     ![main_function](../images/main_func_poj.png)
 
+    ![Poj_challenge](../images/poj_exec1.png)
 # vuln_function
+
     ![vuln_function](../images/vuln_func_poj.png)
 
 
