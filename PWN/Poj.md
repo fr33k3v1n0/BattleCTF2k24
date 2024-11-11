@@ -18,13 +18,16 @@ In this challenge, we are given a binary file with a dinamyc linker/loader
  2. # second step: understand how the prog work
 
 ![Poj_challenge](../images/poj_exec1.png)
-     we have memory leak of write address
 
-    # reverse engineering the program
+The prog leak write address and ask user to input data
+
+# reverse engineering the program
+
 after decompiled the prog with ghidra, we can know that the main function  print write address and call vuln_func.
 
 vuln function read 0x100 byte on local array of length 64 so we have a BOF.
 
+# main function
 
 ![main_function](../images/main_func_poj.png)
 
@@ -35,6 +38,7 @@ vuln function read 0x100 byte on local array of length 64 so we have a BOF.
 
 
 3. # exploit the BOF:
+
     as the prog don't have Cannary and we also have address leak,   we can  exploit  the buffer overflow to make ``ret2system`` 
     1. found offset
     ![found bof offse](../images/found_offset1_poj.png)
