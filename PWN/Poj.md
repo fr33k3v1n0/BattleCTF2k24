@@ -25,7 +25,6 @@ after decompiled the prog with ghidra, we can know that the main function  print
 
 vuln function read 0x100 byte on local array of length 64 so we have a BOF.
 
-# main function
 
     ![main_function](../images/main_func_poj.png)
 
@@ -67,10 +66,11 @@ payload = flat({
 })
 ```
 
-# see the complet exploit:
-```
+# see the complet exploit: ![exploit](./poj_exploi.py)
+
+```bash
 python3 poj_exploi.py  REMOTE challenge.bugpwn.com 1003
-b
+
 ```
     ![found bof offset](../images/exploit_poj.png)
 and we get the flag: battleCTF{Libc_J0P_b4s1c_000_bc8a769d91ae062911c32829608e7d547a3f54bd18c7a7c2f5cc52bd} 
