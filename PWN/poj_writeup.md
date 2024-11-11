@@ -47,7 +47,7 @@ vuln function read 0x100 byte on local array of length 64 so we have a BOF.
 ![found bof offset](../images/found_offset2_poj.png)
     
     2. found useful function address /bin/sh string and gadgets  on the libc 
-```python    ```
+```python    
  # libc.so.6 write = 0xff4d0
 
 libc_write = 0xff4d0  # readelf -s libc.so.6 | grep write 
